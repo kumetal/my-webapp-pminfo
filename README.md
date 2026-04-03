@@ -1,6 +1,6 @@
-# fine_dust_app
+# my-webapp-pminfo
 
-A new Flutter project.
+PM Info Web App
 
 ## Getting Started
 
