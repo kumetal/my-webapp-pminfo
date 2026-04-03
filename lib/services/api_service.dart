@@ -5,7 +5,7 @@ import '../models/air_pollution_model.dart';
 
 class ApiService {
   static const String _baseUrl = 'https://apis.data.go.kr/B552584';
-  static const String _apiKey = '58bf1f622579d5e10cf8fd8c59032b5ce42ecef7541495f853329cc6b0587b2a';
+  static const String _apiKey = String.fromEnvironment('DATA_GO_KR_API_KEY');
 
   // 근접 측정소 목록 조회 (최대 3개)
   Future<List<Station>> getNearbyStations(double tmX, double tmY) async {
