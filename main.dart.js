@@ -41531,33 +41531,45 @@ m=A.ko(o,l)
 if(m==null)m=8
 q=n>m?B.i.k(n):B.i.k(m)
 return new A.jD(a.a,k,s,a.d,p,o,a.r,q)},
-kt(){var s=0,r=A.N(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d,c,b,a
-var $async$kt=A.O(function(a0,a1){if(a0===1){p.push(a1)
+kt(){var s=0,r=A.N(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8
+var $async$kt=A.O(function(a9,b0){if(a9===1){p.push(b0)
 s=q}for(;;)switch(s){case 0:o.f=!0
 o.a9()
 o.r=null
 q=3
 s=6
 return A.J(o.b.n3(),$async$kt)
-case 6:n=a1
+case 6:n=b0
 s=n!=null?7:9
 break
 case 7:e=n.a
-m=A.as(["tmX",2e5+(n.b-127)*88e3,"tmY",5e5+(e-38)*111e3],t.N,t.i)
-e=o.a
-d=J.cj(m,"tmX")
-d.toString
-c=J.cj(m,"tmY")
-c.toString
+d=n.b
+c=e*0.017453292519943295
+b=6378137/Math.sqrt(1-0.006694380022900686*Math.sin(c)*Math.sin(c))
+e=Math.sin(2*c)
+a=Math.sin(4*c)
+a0=Math.sin(6*c)
+a1=Math.sin(1.3264502315156905)
+a2=Math.sin(2.652900463031381)
+a3=Math.sin(3.9793506945470716)
+a4=Math.tan(c)*Math.tan(c)
+a5=0.006739496775478856*Math.cos(c)*Math.cos(c)
+a6=(d*0.017453292519943295-2.2165681500327987)*Math.cos(c)
+m=A.as(["tmX",2e5+b*(a6+(1-a4+a5)*Math.pow(a6,3)/6+(5-18*a4+a4*Math.pow(a4,2)+72*a5-0.3908908129777736)*Math.pow(a6,5)/120),"tmY",5e5+(6378137*(0.9983242984445848*c-0.0025146070728447813*e+0.000002639046620230819*a-34180461367750593e-25*a0)-6378137*(0.6621137483997794-0.0025146070728447813*a1+0.000002639046620230819*a2-34180461367750593e-25*a3)+b*Math.tan(c)*(Math.pow(a6,2)/2+(5-a4+9*a5+4*Math.pow(a5,2))*Math.pow(a6,4)/24+(61-58*a4+Math.pow(a4,2)+600*a5-2.2240339359080226)*Math.pow(a6,6)/720))],t.N,t.i)
+a3=o.a
+a2=J.cj(m,"tmX")
+a2.toString
+a1=J.cj(m,"tmY")
+a1.toString
 s=10
-return A.J(e.qT(d,c),$async$kt)
-case 10:l=a1
+return A.J(a3.qT(a2,a1),$async$kt)
+case 10:l=b0
 s=J.no(l)?11:13
 break
 case 11:k=J.cj(l,0).a
 s=14
-return A.J(e.qM(k),$async$kt)
-case 14:j=a1
+return A.J(a3.qM(k),$async$kt)
+case 14:j=b0
 if(j!=null)o.c=o.x4(j)
 else o.r="\uce21\uc815 \ub370\uc774\ud130\uac00 \uc5c6\uc2b5\ub2c8\ub2e4. ("+A.j(k)+")"
 s=12
@@ -41569,13 +41581,13 @@ break
 case 9:o.r="\uc704\uce58 \uc815\ubcf4\ub97c \uac00\uc838\uc62c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. GPS\uc640 \uad8c\ud55c\uc744 \ud655\uc778\ud574\uc8fc\uc138\uc694."
 case 8:s=15
 return A.J(o.a.vg(),$async$kt)
-case 15:i=a1
+case 15:i=b0
 h=A.r(t.N,t.Sg)
 for(e=J.bp(i);e.v();){g=e.gM()
 if(h.ar(g.a)){d=g.d
-c=J.cj(h,g.a).d
-if(d===c)d=0
-else d=d<c?-1:1
+a=J.cj(h,g.a).d
+if(d===a)d=0
+else d=d<a?-1:1
 d=d>0}else d=!0
 if(d)J.lf(h,g.a,g)}e=h
 d=A.m(e).i("aY<2>")
@@ -41586,8 +41598,8 @@ q=1
 s=5
 break
 case 3:q=2
-a=p.pop()
-f=A.ab(a)
+a8=p.pop()
+f=A.ab(a8)
 o.r="\uc624\ub958 \ubc1c\uc0dd: "+J.di(f)
 A.h8().$1("Detailed error loading dust data: "+A.j(f))
 s=5
