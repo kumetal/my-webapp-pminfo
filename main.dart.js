@@ -7678,10 +7678,10 @@ a4t:function a4t(){},
 aFw(a,b){if(b===B.fV){if(a<=30)return"2"
 if(a<=80)return"4"
 if(a<=150)return"5"
-return"7"}else{if(a<=15)return"1"
-if(a<=30)return"2"
-if(a<=40)return"3"
-if(a<=50)return"4"
+return"7"}else{if(a<=10)return"1"
+if(a<=22)return"2"
+if(a<=35)return"3"
+if(a<=45)return"4"
 if(a<=75)return"5"
 if(a<=100)return"6"
 if(a<=150)return"7"
@@ -7689,10 +7689,10 @@ return"8"}},
 aFx(a,b){if(b===B.fV){if(a<=15)return"2"
 if(a<=35)return"4"
 if(a<=75)return"5"
-return"7"}else{if(a<=8)return"1"
-if(a<=15)return"2"
-if(a<=20)return"3"
-if(a<=25)return"4"
+return"7"}else{if(a<=5)return"1"
+if(a<=9)return"2"
+if(a<=12)return"3"
+if(a<=15)return"4"
 if(a<=37)return"5"
 if(a<=50)return"6"
 if(a<=75)return"7"
@@ -26453,7 +26453,7 @@ $S:2}
 A.aoy.prototype={
 $1(a){var s=A.cY().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/425cfb54d01a9472b3e81d9e76fd63a4a44cfbcb/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/59aa584fdf100e6c78c785d8a5b565d1de4b48ab/":s)+a},
 $S:77}
 A.Hk.prototype={
 Vo(){var s=this.aab(),r=$.b3.by().ImageFilter.MakeColorFilter(s,null)
